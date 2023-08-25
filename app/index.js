@@ -1,34 +1,41 @@
-import { Link, Stack } from 'expo-router';
-import { Image, Text, View } from 'react-native';
+import { SafeAreaView, ScrollView, View } from "react-native";
+import { Stack } from "expo-router";
+import { COLORS, icons, images, SIZES } from "../constants";
+import {
+  ScreenHeaderBtn,
+  Welcome,
+} from "../components/components";
 
-function LogoTitle() {
-  return (
-    <Image
-      style={{ width: 50, height: 50 }}
-      source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
-    />
-  );
-}
+const Home = () => {
 
-export default function Home() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.primary }}>
       <Stack.Screen
         options={{
-          // https://reactnavigation.org/docs/headers#setting-the-header-title
-          title: 'My home',
-          // https://reactnavigation.org/docs/headers#adjusting-header-styles
-          headerStyle: { backgroundColor: '#f4511e' },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-          // https://reactnavigation.org/docs/headers#replacing-the-title-with-a-custom-component
-          headerTitle: props => <LogoTitle {...props} />,
+          headerStyle: { backgroundColor: COLORS.secondary },
+          headerShadowVisible: false,
+          headerLeft: () => (
+            <ScreenHeaderBtn iconUrl={images.logoPNG} dimension='100%' />
+          ),
+          headerRight: () => (
+            <ScreenHeaderBtn iconUrl={icons.menu} dimension='70%' />
+          ),
+          headerTitle: "",
         }}
       />
-      <Text>Home Screen</Text>
-      <Link href={{ pathname: 'details', params: { name: 'Bacon' } }}>Go to Details</Link>
-    </View>
+
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View
+          style={{
+            flex: 1,
+            padding: SIZES.medium,
+          }}
+        >
+          <Welcome/>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
-}
+};
+
+export default Home;
