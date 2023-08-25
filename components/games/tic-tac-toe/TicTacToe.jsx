@@ -1,9 +1,9 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-import styles from './welcome.style'
+import styles from './tictactoe.style'
 
-const Welcome = () => {
+const TicTacToe = () => {
   return (
     <View>
       <Text>Welcome to Tic Tac Toe</Text>
@@ -11,4 +11,4 @@ const Welcome = () => {
   )
 }
 
-export default Welcome
+export default TicTacToe
