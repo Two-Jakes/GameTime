@@ -27,7 +27,7 @@ const TicTacToeView = () => {
                 }}
             />
             <View>
-                <Text> This is Snake </Text>
+                <TicTacToe />
             </View>
         </SafeAreaView>
     )

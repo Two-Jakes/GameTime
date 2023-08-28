@@ -5,7 +5,7 @@ import styles from './tictactoe.style'
 const TicTacToe = () => {
   return (
     <View>
-      <Text>Welcome to Tic Tac Toe</Text>
+      <Text style={styles.toeText}>Welcome to Tic Tac Toe</Text>
     </View>
   )
 }

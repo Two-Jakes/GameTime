@@ -1,9 +1,13 @@
 import { StyleSheet } from "react-native";
-
-import { COLORS, SIZES } from "../../constants";
+import { COLORS, SIZES, FONT } from "../../../constants";
 
 const styles = StyleSheet.create({
-  coontainer: {
+  container: {
+  },
+  toeText: {
+    fontSize: SIZES.medium,
+    color: COLORS.white,
+    fontFamily: FONT.bold,
   },
 });
 

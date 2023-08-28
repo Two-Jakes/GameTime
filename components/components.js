@@ -4,10 +4,16 @@ import ScreenHeaderBtn from "./header/ScreenHeaderBtn";
 import Welcome from "./welcome/Welcome";
 import Footer from "./footer/Footer";
 
-//
+// game components
+import Snake from "./games/snake/Snake"
+import Pong from "./games/pong/Pong"
+import TicTacToe from "./games/tic-tac-toe/TicTacToe"
 
 export {
   Welcome,
   ScreenHeaderBtn,
-  Footer
+  Footer,
+  TicTacToe,
+  Pong,
+  Snake
 };
