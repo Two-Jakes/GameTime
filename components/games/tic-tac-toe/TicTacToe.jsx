@@ -2,6 +2,8 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import styles from './tictactoe.style'
 
+// helper functions go here
+
 const TicTacToe = () => {
   return (
     <View>
