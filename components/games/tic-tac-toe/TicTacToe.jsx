@@ -5,13 +5,13 @@ import styles from './tictactoe.style'
 const TicTacToe = () => {
   let initialBoard = [
     { id: 0, value: 'X' },
-    { id: 1, value: 'X' },
-    { id: 2, value: 'X' },
-    { id: 3, value: 'O' },
-    { id: 4, value: 'O' },
-    { id: 5, value: 'O' },
-    { id: 6, value: 'X' },
-    { id: 7, value: 'X' },
+    { id: 1, value: ' ' },
+    { id: 2, value: ' ' },
+    { id: 3, value: ' ' },
+    { id: 4, value: 'X' },
+    { id: 5, value: ' ' },
+    { id: 6, value: ' ' },
+    { id: 7, value: ' ' },
     { id: 8, value: 'X' }
   ];
 
@@ -20,7 +20,7 @@ const TicTacToe = () => {
   //HELPER FUNCTIONS
 
   handlePress = (item) => {
-    console.log("Item", item, board[0].value);
+    console.log("Clicked on Grid", item, "with a value of", board[item].value);
     //updateBoard([{id: item, value: "X"}]);
   }
 
@@ -38,7 +38,7 @@ const TicTacToe = () => {
         <TouchableOpacity style={styles.boardSpace} onPress={() => this.handlePress(1)}>
           <Text style={styles.boardText}>{board[1].value}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.boardSpace} onPress={() => console.log(1, 3)}>
+        <TouchableOpacity style={styles.boardSpace} onPress={() => this.handlePress(2)}>
           <Text style={styles.boardText}>{board[2].value}</Text>
         </TouchableOpacity>
       </View>
@@ -46,13 +46,13 @@ const TicTacToe = () => {
 
       {/* -----------------------------ROW TWO------------------------------------ */}
       <View style={styles.boardSpaceContainer}>
-        <TouchableOpacity style={styles.boardSpace} onPress={() => console.log(2, 1)}>
+        <TouchableOpacity style={styles.boardSpace} onPress={() => this.handlePress(3)}>
           <Text style={styles.boardText}>{board[3].value}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.boardSpace} onPress={() => console.log(2, 2)}>
+        <TouchableOpacity style={styles.boardSpace} onPress={() => this.handlePress(4)}>
           <Text style={styles.boardText}>{board[4].value}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.boardSpace} onPress={() => console.log(2, 3)}>
+        <TouchableOpacity style={styles.boardSpace} onPress={() => this.handlePress(5)}>
           <Text style={styles.boardText}>{board[5].value}</Text>
         </TouchableOpacity>
       </View>
@@ -60,13 +60,13 @@ const TicTacToe = () => {
 
       {/* -----------------------------ROW THREE------------------------------------ */}
       <View style={styles.boardSpaceContainer}>
-        <TouchableOpacity style={styles.boardSpace} onPress={() => console.log(3, 1)}>
+        <TouchableOpacity style={styles.boardSpace} onPress={() => this.handlePress(6)}>
           <Text style={styles.boardText}>{board[6].value}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.boardSpace} onPress={() => console.log(3, 2)}>
+        <TouchableOpacity style={styles.boardSpace} onPress={() => this.handlePress(7)}>
           <Text style={styles.boardText}>{board[7].value}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.boardSpace} onPress={() => console.log(3, 3)}>
+        <TouchableOpacity style={styles.boardSpace} onPress={() => this.handlePress(8)}>
           <Text style={styles.boardText}>{board[8].value}</Text>
         </TouchableOpacity>
       </View>
