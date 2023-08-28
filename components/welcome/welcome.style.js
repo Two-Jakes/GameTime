@@ -23,15 +23,16 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     margin: 20,
-    backgroundColor: COLORS.accentBlue
   },
   gameBtnImage: {
     alignItems: "center",
-    width: 50,
-    height: 50,
+    width: 90,
+    height: 90,
   },
   gameTitle: {
-
+    fontSize: SIZES.medium,
+    color: COLORS.white,
+    fontFamily: FONT.regular,
   },
   gameBtnContainer: {
     flexDirection: 'row',

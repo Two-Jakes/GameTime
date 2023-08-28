@@ -8,7 +8,7 @@ const COLORS = {
   // Extras
   white: "#F3F4F8",
   lightWhite: "#FAFAFC",
-  accentBlue: "0085ef",
+  accentBlue: "#0085ef",
 };
 
 const FONT = {

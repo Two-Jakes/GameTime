@@ -4,6 +4,7 @@ import { COLORS, icons, images, SIZES } from "../constants";
 import {
   ScreenHeaderBtn,
   Welcome,
+  Footer
 } from "../components/components";
 
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
           }}
         >
           <Welcome/>
+          <Footer/>
         </View>
       </ScrollView>
     </SafeAreaView>
