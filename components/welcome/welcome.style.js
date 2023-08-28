@@ -23,11 +23,14 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     margin: 20,
-  },
-  gameTitle: {
-
+    backgroundColor: COLORS.accentBlue
   },
   gameBtnImage: {
+    alignItems: "center",
+    width: 50,
+    height: 50,
+  },
+  gameTitle: {
 
   },
   gameBtnContainer: {

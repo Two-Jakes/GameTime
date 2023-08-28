@@ -1,4 +1,4 @@
-import { icons } from "../../constants";
+import { icons, images } from "../../constants";
 import styles from "./welcome.style";
 import {
     View,
@@ -17,30 +17,28 @@ const Welcome = () => {
             <View style={styles.gameBtnContainer}>
                 <TouchableOpacity style={styles.gameBtn} onPress={() => ({})}>
                     <Image
-                        source={icons.no_image_placeholder}
-                        resizeMode='contain'
-                        style={styles.searchBtnImage}
-                    />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.gameBtn} onPress={() => ({})}>
-                    <Image
-                        source={icons.no_image_placeholder}
+                        source={images.tictactoe}
                         resizeMode='contain'
                         style={styles.gameBtnImage}
-                        width={50} 
-                        height={50}
                     />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.gameBtn} onPress={() => ({})}>
                     <Image
-                        source={icons.no_image_placeholder}
+                        source={images.pong}
+                        resizeMode='contain'
+                        style={styles.gameBtnImage}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.gameBtn} onPress={() => ({})}>
+                    <Image
+                        source={images.blackjack}
                         resizeMode='contain'
                         style={styles.searchBtnImage}
                     />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.gameBtn} onPress={() => ({})}>
                     <Image
-                        source={icons.no_image_placeholder}
+                        source={images.snake}
                         resizeMode='contain'
                         style={styles.searchBtnImage}
                     />
@@ -52,7 +50,7 @@ const Welcome = () => {
             <View style={styles.gameBtnContainer}>
                 <TouchableOpacity style={styles.gameBtn} onPress={() => ({})}>
                     <Image
-                        source={icons.no_image_placeholder}
+                        source={images.coming}
                         resizeMode='contain'
                         size
                         style={styles.searchBtnImage}
@@ -60,21 +58,21 @@ const Welcome = () => {
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.gameBtn} onPress={() => ({})}>
                     <Image
-                        source={icons.no_image_placeholder}
+                        source={images.coming}
                         resizeMode='contain'
                         style={styles.gameBtnImage}
                     />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.gameBtn} onPress={() => ({})}>
                     <Image
-                        source={icons.no_image_placeholder}
+                        source={images.coming}
                         resizeMode='contain'
                         style={styles.searchBtnImage}
                     />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.gameBtn} onPress={() => ({})}>
                     <Image
-                        source={icons.no_image_placeholder}
+                        source={images.coming}
                         resizeMode='contain'
                         style={styles.searchBtnImage}
                     />
