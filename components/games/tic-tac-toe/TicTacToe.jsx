@@ -14,13 +14,18 @@ const TicTacToe = () => {
     {id: 7, value: ''},
     {id: 8, value: ''}
   ];
+  
   const [board, updateBoard] = useState(initialBoard);
 
   //HELPER FUNCTIONS
 
-  const handlePress = (item) => {
-    console.log("ZERO PRESSED");
-    updateBoard(board[item].value = 'X');
+  handlePress = (item) => {
+    console.log("Item", item, board[0].value);
+    if (board[item].value === ''){
+      updateBoard([{value: "X"}]);
+    } else if (board[item].value === 'X'){
+      updateBoard([{value: "O"}]);
+    }
   }
 
   return (
@@ -29,7 +34,7 @@ const TicTacToe = () => {
 
       {/* -----------------------------ROW ONE------------------------------------ */}
       <View style={styles.boardSpaceContainer}>
-          <TouchableOpacity style={styles.boardSpace} onPress={handlePress(0)}>
+          <TouchableOpacity style={styles.boardSpace} onPress={() => this.handlePress(0)}>
               <Text style={styles.toeText}>{board[0].value}</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.boardSpace} onPress={() => console.log(1,2)}>
