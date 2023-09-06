@@ -26,9 +26,7 @@ const BlackJackView = () => {
                     headerTitle: "",
                 }}
             />
-            <View>
-                <Text> This is BlackJack </Text>
-            </View>
+           <BlackJack />
         </SafeAreaView>
     )
 }
