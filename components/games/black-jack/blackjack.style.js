@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
   boardText: {
 
   },
+  cardImage: {
+    width: 70,
+    height: 100,
+  },
   boardSpaceContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -31,6 +35,12 @@ const styles = StyleSheet.create({
     padding: 30,
     length: 30,
     width: 30,
+    borderColor: 'white',
+    borderWidth: 2,
+    borderRadius: 5,
+    borderStyle: 'dotted',
+  },
+  boardSpaceWithCard: {
     borderColor: 'white',
     borderWidth: 2,
     borderRadius: 5,
