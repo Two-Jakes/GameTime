@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     height:40,
     alignItems:'center',
-
   },
   footerBtn: {
     alignItems:'center',

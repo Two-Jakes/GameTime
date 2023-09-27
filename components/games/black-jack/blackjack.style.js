@@ -3,23 +3,46 @@ import { COLORS, SIZES, FONT } from "../../../constants";
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 20,
   },
   titleText: {
     fontFamily: FONT.bold,
     fontSize: SIZES.xLarge,
     color: COLORS.white,
-    marginTop: 40,
+    marginTop: 30,
     marginBottom: 10,
-    paddingBottom: 20,
     justifyContent: "center",
     alignItems: "center",
   },
-  boardText: {
-
+  boardTextSmall: {
+    fontFamily: FONT.bold,
+    fontSize: SIZES.small,
+    color: COLORS.white,
+    marginLeft: 2,
+    marginRight: 8
+  },
+  boardTextMed: {
+    fontFamily: FONT.bold,
+    fontSize: SIZES.medium,
+    color: COLORS.white,
+    marginLeft: 15,
+    marginRight: 15
+  },
+  boardTextBot: {
+    fontFamily: FONT.bold,
+    fontSize: SIZES.medium,
+    color: COLORS.white,
+    marginLeft: 10,
+    marginRight: 10
+  },
+  boardTextPlay: {
+    fontFamily: FONT.bold,
+    fontSize: SIZES.medium,
+    color: COLORS.white,
+    marginLeft: 10,
+    marginRight: 10,
+    marginTop: 5
   },
   cardImage: {
     width: 70,
@@ -45,7 +68,43 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 5,
     borderStyle: 'dotted',
-  }
+  },
+  boardButton: {
+    backgroundColor: COLORS.accentBlue,
+    padding: 20,
+    length: 10,
+    width: 85,
+    borderWidth: 5,
+    borderRadius: 15,
+  },
+  boardPlayButton: {
+    backgroundColor: COLORS.accentGreen,
+    padding: 20,
+    length: 10,
+    width: 85,
+    borderWidth: 5,
+    borderRadius: 15,
+  },
+  boardButtonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 40
+  },
+  boardButtonGameContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 20
+  },
+  boardTextContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 10,
+
+  },
+  boardFooter: {
+    marginTop: 200,
+  },
 });
 
 export default styles;
